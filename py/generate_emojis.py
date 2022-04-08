@@ -58,5 +58,5 @@ for line in lines:
 
 #Write emojis to JSON file
 print("Writing data to emojis.json")
-with open('emojis.json', 'w') as fp:
+with open('../Source/Resources/emojis.json', 'w') as fp:
 	json.dump(emojis, fp)

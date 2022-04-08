@@ -26,7 +26,7 @@ let package = Package(
             dependencies: [],
             path: "Source",
             exclude: ["Croc.h"],
-            resources: [.process("../py/emojis.json")]),
+            resources: [.process("Resources/emojis.json")]),
         .testTarget(
             name: "CrocTests",
             dependencies: ["Croc"],

@@ -87,7 +87,7 @@
 		3E3FBD17203898B800A5AD4A /* EmojiLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiLookup.swift; sourceTree = "<group>"; };
 		3E3FBD1C203968B800A5AD4A /* CharExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharExtensionTests.swift; sourceTree = "<group>"; };
 		3EB91A072035CBD200C59FA9 /* Croc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Croc.h; path = Source/Croc.h; sourceTree = SOURCE_ROOT; };
-		3EB9F1522052FD6A003478A4 /* emojis.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = emojis.json; path = py/emojis.json; sourceTree = SOURCE_ROOT; };
+		3EB9F1522052FD6A003478A4 /* emojis.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = emojis.json; path = Source/Resources/emojis.json; sourceTree = SOURCE_ROOT; };
 		3ED83F532035CF3C009CADD6 /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensionTests.swift; path = Tests/StringExtensionTests.swift; sourceTree = SOURCE_ROOT; };
 		3ED83F572035CFF4009CADD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
 		3ED865262034B097005B63ED /* Croc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Croc.swift; path = Source/Croc.swift; sourceTree = SOURCE_ROOT; };

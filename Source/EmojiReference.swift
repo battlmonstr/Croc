@@ -31,8 +31,14 @@ internal class EmojiReference {
     private var emojiHashcodes : Dictionary<String, Bool> = [:]
     
     init() {
+        #if SWIFT_PACKAGE
+            let bundle = Bundle.module
+        #else
+            let bundle = Bundle(for: EmojiReference.self)
+        #endif
+        
         //Try to read path to file
-        if let path = Bundle(for: EmojiReference.self).path(forResource: "emojis", ofType: "json") {
+        if let path = bundle.path(forResource: "emojis", ofType: "json") {
             if let data = NSData(contentsOfFile: path) {
                 if let jsonData = try? JSONSerialization.jsonObject(with: data as Data, options: .mutableContainers) as? Dictionary<String, Dictionary<String, Array<Dictionary<String, AnyObject>>>> {
                     for (group, subgroups) in jsonData {
