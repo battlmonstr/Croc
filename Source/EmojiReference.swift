@@ -32,7 +32,7 @@ internal class EmojiReference {
         //Try to read path to file
         if let path = Bundle(for: EmojiReference.self).path(forResource: "emojis", ofType: "json") {
             if let data = NSData(contentsOfFile: path) {
-                if let jsonData = try? JSONSerialization.jsonObject(with: data as Data, options: .mutableContainers) as! Dictionary<String, Dictionary<String, Array<Dictionary<String, AnyObject>>>> {
+                if let jsonData = try? JSONSerialization.jsonObject(with: data as Data, options: .mutableContainers) as? Dictionary<String, Dictionary<String, Array<Dictionary<String, AnyObject>>>> {
                     for (group, subgroups) in jsonData {
                         for (subgroup, emojis) in subgroups {
                             for emoji in emojis {
